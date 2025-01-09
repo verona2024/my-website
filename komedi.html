@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="navbar.css" />
+        <script src="books.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            defer
+        ></script>
+        <title>Komedi</title>
+        <link
+            rel="shortcut icon"
+            href="index-romance/favicon.webp"
+            type="image/x-icon"
+        />
+
+        <style>
+            .body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-image: url(images/kom\ background.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .comedy-books {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+                width: 98%;
+                padding: 1%;
+                max-width: 1200px;
+                margin: 20px auto;
+            }
+
+            .book {
+                position: relative;
+                width: 150px;
+                height: 250px;
+                overflow: hidden;
+                text-align: center;
+                margin: 0px auto;
+            }
+
+            .book img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .book img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+            }
+
+            .info-box {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                padding: 10px;
+                border-radius: 0 0 5px 5px;
+                opacity: 0;
+                transform: translateY(100%);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+
+            .book:hover .info-box {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+
+        <div class="body">
+            <nav class="comedy-books">
+                <div class="book">
+                    <img
+                        src="komedi/good omens kom.jpg"
+                        alt="good omens"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Good Omens<br />
+                        <strong>Author:</strong> Neil Gaiman & Terry Pratchett
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/catch 22 kom.jpg"
+                        alt="catch 22"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Catch-22<br />
+                        <strong>Author:</strong> Joseph Heller
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/guards guards kom.jpg"
+                        alt="guards"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Guards! Guards!<br />
+                        <strong>Author:</strong> Terry Pratchett
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/three men in a boat kom.jpg"
+                        alt="three men in a boat"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Three Men in a Boat<br />
+                        <strong>Author:</strong> Jerome K. Jerome
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/i feel bad about my neck kom.jpg"
+                        alt="i feel bed about my neck"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> I Feel Bad About My Neck<br />
+                        <strong>Author:</strong> Nora Ephron
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/little weirds kom.jpg"
+                        alt="little weirds"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Little Weirds<br />
+                        <strong>Author:</strong> Jenny Slate
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/portnoy's complaint kom.jpg"
+                        alt="portnoy's complaint"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Portnoy's Complaint<br />
+                        <strong>Author:</strong> Philip Roth
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/less kom.jpg"
+                        alt="less"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Less<br />
+                        <strong>Author:</strong> Andrew Sean Greer
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/yes please kom.jpg"
+                        alt="yes please"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Yes Please<br />
+                        <strong>Author:</strong> Amy Poehler
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/the idiot kom.jpg"
+                        alt="the idiot"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> The Idiot<br />
+                        <strong>Author:</strong> Elif Batuman
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/me talk pretty kom.jpg"
+                        alt="me talk pretty"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Me Talk Pretty One Day<br />
+                        <strong>Author:</strong> David Sedaris
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/cold comfort farm kom.jpg"
+                        alt="cold"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Cold Comfort Farm<br />
+                        <strong>Author:</strong> Stella Gibbons
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/hyperbole and a half kom.jpg"
+                        alt="hyperbole"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Hyperbole and a Half<br />
+                        <strong>Author:</strong> Allie Brosh
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/so long and thanks for all the fish kom.jpg"
+                        alt="so long and thanks for the fish"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> So Long and Thanks for All the
+                        Fish<br />
+                        <strong>Author:</strong> Douglas Adams
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/antkind kom.jpg"
+                        alt="antkind"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Antkind<br />
+                        <strong>Author:</strong> Charlie Kaufman
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/where'd you go kom.jpg"
+                        alt="where would you go"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Where'd You Go, Bernadette<br />
+                        <strong>Author:</strong> Maria Semple
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/the greatest nobodies of history.jpg"
+                        alt="the greatest nobodies"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> The Princess Bride<br />
+                        <strong>Author:</strong> William Goldman
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/then we came to the end kom.jpg"
+                        alt="then we came to the end"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Then We Came to the End<br />
+                        <strong>Author:</strong> Joshua Ferris
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/the princess bride kom.jpg"
+                        alt="the princess bride"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> The Princess Bride<br />
+                        <strong>Author:</strong> William Goldman
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/you deserve each other kom.jpg"
+                        alt="you deserve each other"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> You Deserve Each Other<br />
+                        <strong>Author:</strong> Sarah Hogle
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/the suposedly fun thing i'll never do again kom.jpg"
+                        alt="a supposedly thing"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> A Supposedly Fun Thing I'll
+                        Never Do Again<br />
+                        <strong>Author:</strong> David Foster Wallace
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/comedy kom.jpg"
+                        alt="comedy"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Comedy<br />
+                        <strong>Author:</strong> Various Authors
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/is this anything kom.jpg"
+                        alt="is this anything"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Is This Anything?<br />
+                        <strong>Author:</strong> Jerry Seinfeld
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/born a crime kom.jpg"
+                        alt="born a crime"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Born a Crime<br />
+                        <strong>Author:</strong> Trevor Noah
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/the sellout kom.jpg"
+                        alt="the sellout"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> The Sellout<br />
+                        <strong>Author:</strong> Paul Beatty
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/born standing up kom.jpg"
+                        alt="born standing up"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Born Standing Up<br />
+                        <strong>Author:</strong> Steve Martin
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/sick in the head kom.jpg"
+                        alt="sick in the head"
+                        style="height: 250px"
+                    />
+                    <div class="info-box">
+                        <strong>Title:</strong> Sick in the Head<br />
+                        <strong>Author:</strong> Judd Apatow
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/miss may not exist kom.jpg"
+                        alt="miss may not exist"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Miss May Not Exist<br />
+                        <strong>Author:</strong> Carrie Courogen
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/spamalot ko.jpg"
+                        alt="spamalot"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Spamalot<br />
+                        <strong>Author:</strong> Eric Idle
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/this is where i leave you kom.jpg"
+                        alt="this is where i leave you"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> This Is Where I Leave You<br />
+                        <strong>Author:</strong> Jonathan Tropper
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/based on a true story kom.jpg"
+                        alt="based on a true story"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Based on a True Story<br />
+                        <strong>Author:</strong> Norm Macdonald
+                    </div>
+                </div>
+
+                <div class="book">
+                    <img
+                        src="komedi/hand jobs for the whole family kom.jpg"
+                        alt="hand jobs for the whole family"
+                        style="height: 250px"
+                    />
+
+                    <div class="info-box">
+                        <strong>Title:</strong> Hand Jobs for the Whole
+                        Family<br />
+                        <strong>Author:</strong> Justin Elizabeth Sayre
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </body>
+</html>

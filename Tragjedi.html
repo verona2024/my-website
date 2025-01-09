@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragjedi</title>
+    <link rel="shortcut icon" href="index-romance/favicon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="navbar.css">
+    <script src="books.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            defer
+        ></script>
+    <style>
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px;
+            padding: 20px;
+        }
+
+        
+        .book-item {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .book-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .book-info {
+            padding: 10px;
+        }
+
+        .book-info h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .book-info .author {
+            font-size: 14px;
+            color: #555;
+        }
+
+
+        @media (max-width: 768px) {
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        
+        @media (max-width: 480px) {
+            .book-grid {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <section id="tragjedi">
+        <h2>Librat Tragjedi</h2>
+        <div class="book-grid" id="bookGrid"></div>
+      </section>
+    
+
+    <script>
+        const books = [
+          { title: "Hamlet", author: "William Shakespeare", imageUrl: "tragjedi/hamlet.jpg" },
+          { title: "Wuthering Heights", author: "Emily Brontë", imageUrl: "tragjedi/heights.jpg" },
+          { title: "The Tragedy of Macbeth", author: "William Shakespeare", imageUrl: "tragjedi/macbeth.jpg" },
+          { title: "Fausti", author: "Johann Wolfgang von Goethe", imageUrl: "tragjedi/faust.jpg" },
+          { title: "Anna Karenina", author: "Leo Tolstoy", imageUrl: "tragjedi/anna karenina.jpg" },
+          { title: "Antigone", author: "Sophocles", imageUrl: "tragjedi/antigone.jpg" },
+          { title: "An American Tragedy", author: "Theodore Dreiser", imageUrl: "tragjedi/tragjedi amerikane.jpg" },
+          { title: "Romeo dhe Zhulieta", author: "William Shakespeare", imageUrl: "tragjedi/romeo.jpg" },
+          { title: "The Fault in our Stars", author: "John Green", imageUrl: "tragjedi/gabimi.jpg" },
+          { title: "The Book Thief", author: "Markus Zusak", imageUrl: "tragjedi/book thief.jpg" },
+          { title: "Things Fall Apart", author: "Chinua Achebe", imageUrl: "tragjedi/things fall apart.jpg" },
+          { title: "Othello", author: "William Shakespeare", imageUrl: "tragjedi/othello.jpg" },
+          { title: "Antony and Cleopatra", author: "William Shakespeare", imageUrl: "tragjedi/antoni dhe kleopatra.jpg" },
+          { title: "The Diary of a Young Girl", author: "Anne Frank", imageUrl: "tragjedi/ditari.jpg" },
+          { title: "If I Stay", author: "Gayle Forman", imageUrl: "tragjedi/if i stay.jpg" },
+          { title: "The Bluest Eye", author: "Toni Morrison", imageUrl: "tragjedi/the bluest eye.jpg" },
+          { title: "The Kite Runner", author: "Khaled Hosseini", imageUrl: "tragjedi/the kite runner.jpg" },
+          { title: "Atonement", author: "Ian McEwan,", imageUrl: "tragjedi/atonement.jpg" },
+          { title: "The Castle of Otranto", author: "Horace Walpole", imageUrl: "tragjedi/otranto.png" },
+          { title: "King Lear", author: "William Shakespeare", imageUrl: "tragjedi/king lear.jpg" },
+        ];
+    
+       
+        function loadBooks() {
+          const bookGrid = document.getElementById('bookGrid');
+          books.forEach(book => {
+            const bookItem = document.createElement('div');
+            bookItem.classList.add('book-item');
+    
+            const bookImage = document.createElement('img');
+            bookImage.src = book.imageUrl;
+            bookImage.alt = book.title;
+    
+            const bookInfo = document.createElement('div');
+            bookInfo.classList.add('book-info');
+    
+            const bookTitle = document.createElement('h3');
+            bookTitle.textContent = book.title;
+    
+            const bookAuthor = document.createElement('p');
+            bookAuthor.classList.add('author');
+            bookAuthor.textContent = book.author;
+    
+            bookInfo.appendChild(bookTitle);
+            bookInfo.appendChild(bookAuthor);
+    
+            bookItem.appendChild(bookImage);
+            bookItem.appendChild(bookInfo);
+    
+            bookGrid.appendChild(bookItem);
+          });
+        }
+    
+        loadBooks();
+      </script>
+    
+</body>
+</html>
