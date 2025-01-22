@@ -1,4 +1,11 @@
-.book-feature {
+#website-librash {
+     min-height: 100vh;
+     margin: 0;
+     background: linear-gradient(135deg, #16202e, #162135);
+     font-family: Arial, sans-serif;
+}
+
+.va-book-feature {
     margin-top: 50px;
     padding: 1%;
     height: fit-content;
@@ -8,19 +15,15 @@
     border: 1px solid;
     border-color: aliceblue;
     border-radius: 5px;
-    background-image: url(images/mountains.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 @media screen and (min-width:768px) {
-    .book-feature {
+    .va-book-feature {
         width: 80%;
     }
 }
 
-.book-image {
+.va-book-image {
     width: auto;  
     height: auto;  
     border-radius: 8px;
@@ -28,22 +31,22 @@
     margin-right: 20px; 
 }
 
-.book-info {
+.va-book-info {
     text-align: left; 
 }
 
-.book-title {
+.va-book-title {
     font-size: 24px;
     color: white;
     margin-bottom: 5px;
 }
 
-.book-author {
+.va-book-author {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-.scary-text {
+.va-scary-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: white;
@@ -67,7 +70,7 @@
 }
 
 
-.images-container {
+.va-images-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -75,13 +78,13 @@
     
 }
 
-.images-container img {
+.va-images-container img {
     width: 150px;
     height: auto;
     transition: transform 0.3s ease, z-index 0.3s ease;
 }
 
-.images-container img:hover {
+.va-images-container img:hover {
     transform: scale(1.2);
     filter: brightness(110%);
     z-index: 3;
@@ -90,26 +93,82 @@
 
 @media screen and (max-width: 768px) {
 
-    .book-image {
+    .va-book-image {
         margin-bottom: 20px;
     }
 
-    .images-container {
+    .va-images-container {
         flex-direction: column;
         align-items: center;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .book-title {
+    .va-book-title {
         font-size: 20px;
     }
 
-    .scary-text {
+    .va-scary-text {
         font-size: 14px;
     }
 
-    .images-container img {
+    .va-images-container img {
         width: 100%;
     }
+}
+
+.container {
+    border: 1px solid;
+    color: black;
+    background-color: lightgrey;
+}
+
+
+footer {
+    background-color: #131313;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.va-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.va-footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 5px;
+    color: #ddd;
+    padding: 5px 10px;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+.footer-link:focus {
+    outline: none;
+}
+
+.blue-link {
+    color: #ddd;
+}
+
+.blue-link:hover {
+    color: #007bff;
+}
+
+.blue-link:focus {
+    outline: none;
 }
