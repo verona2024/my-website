@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,42 +11,48 @@
         />
 
         <link rel="stylesheet" href="navbar.css" />
-        <script src="books.js"></script>
+        <script src="index.js" defer></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
             defer
         ></script>
         <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-                background-color: rgb(248, 229, 250);
-            }
-
-            .background {
+             body {
                 background-image: url(index-romance/romance-background.jpg);
                 background-size: cover;
                 background-position: center;
-                height: 39vh;
+                background-attachment: fixed;
+            }
+
+             header {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                z-index: 100;
+            }   
+
+            .va-background {
+                background-image: url(index-romance/romanca.png);
+                background-size: cover;
+                background-position: center;
+                height: 45vh;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                padding-right: 250px;
+                padding-right: 460px;
             }
 
-            .content {
-                text-align: center;
-                color: #333;
+            .va-content {
+                color: #3f0404;
             }
 
             h1 {
                 font-size: 2.5rem;
-                margin: 0;
             }
 
             p {
-                font-size: 1.2rem;
-                margin-top: 10px;
+                font-size: 1.3rem;
             }
 
             #book-catalog {
@@ -64,15 +70,33 @@
                 #book-catalog {
                     grid-template-columns: repeat(2, 1fr);
                 }
+
+                .va-background {
+                    padding-right: 350px;
+                }
             }
             @media (max-width: 400px) {
-                .background {
+                .va-background {
                     padding-right: 0px;
+                    padding-left: 68px;
                 }
             }
             @media (max-width: 480px) {
+                .va-background {
+                    padding-right: 50px;
+                }
+
+
                 #book-catalog {
-                    grid-template-columns: 1fr;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px; 
+                    width: 100%; 
+                }
+
+                #book-catalog img {
+                    width: 100%; 
+                    height: auto; 
                 }
             }
         </style>
@@ -80,97 +104,121 @@
     <body>
         <header></header>
 
-        <div class="background">
-            <div class="content">
+        
+
+        <div class="va-background">
+            <div class="va-content">
                 <h1>Librat Romancë♥</h1>
                 <br />
                 <p>Lexoni librat më të bukur romancë!</p>
             </div>
         </div>
 
-        <div>
-            <br />
-            <br />
-            <br />
-        </div>
+        <br>
+        <br>
+        <br>
 
-        <div id="book-catalog">
-            <img src="index-romance/romeo.jpg" alt="romeo" width="170px" />
+        <section id="book-catalog">
+            <img 
+                src="index-romance/romeo.jpg"
+                alt="romeo" 
+                width="180px" />
+
             <img
                 src="index-romance/ugly love.jpg"
                 alt="ugly love"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/me before you.jpg"
                 alt="me before you"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/twilight.jpg"
                 alt="twilight"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/get a life.jpg"
                 alt="get a life"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/the neighbor favor rom.jpg"
                 alt="romance"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/the proposal.jpg"
                 alt="the proposal"
-                width="170px"
-            />
+                width="180px" />
+
             <img
                 src="index-romance/the deal rom.jpg"
                 alt="the deal"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/the seven year slip rom.jpg"
                 alt="the seven year slip"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/happy place rom.jpg"
                 alt="happy place"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/beach read rom.jpg"
                 alt="beach read"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/the hating game rom.jpg"
                 alt="the hating game"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/book lovers rom.jpg"
                 alt="book lovers"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/when i think of you rom.jpg"
                 alt="when i think of you"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/artfully yours rom.jpg"
                 alt="artfully yours"
-                width="170px"
-            />
+                width="180px"/>
+
             <img
                 src="index-romance/anna maria and the fox rom.jpg"
                 alt="anna maria and the fox"
-                width="170px"
-            />
-        </div>
+                width="180px"/>
+
+            <img
+                src="index-romance/a-walk-to-remember.webp"
+                alt="a walk to remember"
+                width="180px"/>
+
+            <img
+                src="index-romance/dear john.jpg"
+                alt="dear john"
+                width="180px" />
+
+            <img
+                src="index-romance/the spanish love deception.jpg"
+                alt="the spanish love deception"
+                width="180px"/>
+
+            <img
+                src="index-romance/30 things i love about myself.webp"
+                alt="30 things i love about myself"
+                width="180px"/>
+
+        </section>
     </body>
 </html>
