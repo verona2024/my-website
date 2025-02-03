@@ -17,9 +17,6 @@ body {
     padding: 5px 20px;
     background-color: white;
     width: 100%;
-    position: sticky; 
-    top: 0; 
-    z-index: 1000;
     background-color: #1f2b36;  
     margin: 0;
 }
